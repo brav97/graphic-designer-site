@@ -1,0 +1,342 @@
+/*--------------------------------------------------------------
+# Outer Container
+--------------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+    .outer-container {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .no-padding {
+        padding: 0;
+    }
+}
+
+/*
+  Hamburger Menu
+----------------------------------------*/
+.hamburger-menu .menu-icon,
+.hamburger-menu .menu-close-icon {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.hamburger-menu.close .menu-icon {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu-close-icon {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hamburger-menu.close .menu-close-icon {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hamburger-menu img {
+    display: block;
+    margin: 0 auto;
+}
+/*
+# Social Profiles
+--------------------------------*/
+.social-profiles ul {
+    padding: 10px 0 34px 0;
+    margin: 0;
+}
+
+.social-profiles ul li {
+    display: block;
+    padding: 0 18px;
+    font-size: 0.5rem;
+}
+
+.social-profiles ul li a {
+    color: #191919;
+    transition: all 0.35s;
+}
+
+.social-profiles ul li a:hover {
+    color: #f0437e;
+}
+
+.nav-bar-sep {
+    height: 78px;
+}
+
+@media screen and (max-width: 992px) {
+    .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        padding: 15px 30px;
+        background: #fff;
+        box-shadow: 0 12px 24px rgba(0,0,0,.09);
+    }
+
+    .site-header,
+    .hamburger-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger-menu {
+        flex-flow: column;
+    }
+
+    .hamburger-menu .menu-icon, .hamburger-menu .menu-close-icon {
+        position: absolute;
+        top: 26px;
+        right: 24px;
+    }
+
+    .main-menu li {
+        position: relative;
+    }
+
+    .main-menu li::after {
+        content: '';
+        position: absolute;
+        top: 11px;
+        right: 0;
+        font-family: 'FontAwesome', serif;
+    }
+
+    .main-menu li:hover::after,
+    .main-menu li.current-menu-item::after {
+        color: #f0437e;
+    }
+
+    .site-navigation {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        height: 500px;
+        background: #fff;
+        box-shadow: 0 12px 24px rgba(0,0,0,.09);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+
+    .site-navigation.show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .social-profiles ul {
+        padding: 80px 15px 30px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .site-header,
+    .site-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 80px;
+        height: 100vh;
+        padding: 0 15px;
+        box-shadow: 6px 0 12px rgba(0,0,0,.05);
+    }
+
+    .site-navigation {
+        background: #f7f7f7;
+    }
+
+    .site-navigation.show {
+        left: 80px;
+    }
+
+    .site-header {
+        background: #fff;
+    }
+
+    .site-header.no-shadow {
+        box-shadow: none;
+    }
+
+    .site-header .site-branding.hide {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .site-title {
+        padding: 28px 0 10px 0;
+    }
+
+    .hamburger-menu .menu-icon,
+    .hamburger-menu .menu-close-icon {
+        position: absolute;
+        top: calc(50vh - 22px);
+        left: 15px;
+        width: calc(100% - 30px);
+        padding: 10px 0;
+    }
+
+    .site-navigation {
+        left: -250px;
+        z-index: 99;
+        width: 250px;
+        padding: 0;
+        box-shadow: 16px 0 42px rgba(0,0,0,.09);
+    }
+
+    .main-menu {
+        height: calc(100vh - 160px);
+        padding: 0;
+    }
+
+    .main-menu li {
+        border-bottom: 0;
+        text-align: center;
+    }
+
+    .social-profiles ul li {
+        font-size: 1.125rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+a {
+    color: royalblue;
+
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover, a:focus, a:active {
+    color: midnightblue;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+    list-style: none;
+}
+
+/*
+# Main Menu
+--------------------------------*/
+.main-menu {
+    padding: 15px 30px;
+    margin: 0;
+}
+
+.main-menu li {
+    display: block;
+    padding: 12px 0;
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.main-menu li:nth-last-of-type(1) {
+    border-bottom: 0;
+}
+
+.main-menu li a {
+    display: block;
+    color: #a6a6a6;
+    text-decoration: none;
+    transition: all 0.35s;
+}
+
+.main-menu li a:hover,
+.main-menu li.current-menu-item a {
+    color: #f0437e;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*
+# Site Branding
+--------------------------------*/
+.site-branding {
+    transition: all .5s;
+}
+
+.site-title {
+    margin: 0;
+    text-align: center;
+}
+
+.site-navigation .site-title a {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+# Scroll Down
+--------------------------------------------------------------*/
+.scroll-down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 99;
+    width: 120px;
+    height: 100px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.arrow-down {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.scroll-text {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*
+# Site Branding
+--------------------------------*/
+.site-branding {
+    transition: all .5s;
+}
+
+.site-title {
+    margin: 0;
+    text-align: center;
+}
+
+.site-navigation .site-title a {
+    display: block;
+}
+
+
+/*
+# Site Navigation
+--------------------------------*/
+.site-navigation {
+    transition: all .5s;
+}

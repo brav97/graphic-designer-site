@@ -1,0 +1,71 @@
+
+#information_block{
+    margin-top: 30px;
+
+
+
+}
+#house_of_buttons{
+    margin-top: 50px;
+}
+#closed_links{
+    margin-top: 60px;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+
+}
+h3{
+    text-align: center;
+    color: #4E7FBC;
+    font-family: 'Oswald', sans-serif;
+
+}
+h5{
+
+    font-family: 'Oswald', sans-serif;
+    color: white;
+
+}
+#portfolio,#insta{
+    border-radius: 6px;
+    background-color: #4E7FBC;
+}
+#center:hover, #facebook :hover{
+    background-color:#3b5998;
+}
+#center:hover, #youtube :hover{
+    background-color: #c4302b;
+}
+#center:hover, #mail :hover{
+    background-color: #c71610;
+}
+#center:hover, #plus :hover
+{
+    background-color:#08851b;
+}
+#modal-footer, #btn_login :hover
+{
+    background-color:#f2a60c;
+    border-radius: 6px;
+}
+#btn_login{
+    font-family: 'Oswald', sans-serif;
+}
+
+#portfolio:hover,#insta:hover{
+    background-color:black;
+
+}
+#dd1:hover,#dd2:hover{
+    background-color:#5c6bc0;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
